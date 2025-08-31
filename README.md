@@ -1,29 +1,32 @@
 # Weather Data Pipeline
 This project demonstrates a modern data pipeline built on a local environment, focusing on the Extract, Load, and Transform (ELT) process. The pipeline fetches weather data from an external API, loads it into a PostgreSQL database, and then uses dbt (data build tool) to perform data transformations. The entire workflow is orchestrated and automated with Apache Airflow.
 
-## Project Overview
+### Project Overview
 The primary goal of this pipeline is to ingest raw data and transform it into a clean, queryable format for analytics. This process is broken down into three main steps:
 
-### Extract & Load: A Python script fetches raw weather data from a mock API and loads it into a staging table in the PostgreSQL database.
+### Extract & Load:
+A Python script fetches raw weather data from a mock API and loads it into a staging table in the PostgreSQL database.
 
-### Transform: dbt models are executed to clean, normalize, and enrich the raw data, creating a final, business-ready table.
+### Transform:
+dbt models are executed to clean, normalize, and enrich the raw data, creating a final, business-ready table.
 
-### Orchestrate: Apache Airflow schedules and manages the execution of the ingestion and transformation tasks, ensuring the pipeline runs reliably.
+### Orchestrate:
+Apache Airflow schedules and manages the execution of the ingestion and transformation tasks, ensuring the pipeline runs reliably.
 
 This project is designed to be a fully self-contained, local setup, ideal for learning or development purposes without relying on cloud infrastructure.
 
 ## Tech Stack
 This project leverages the following open-source technologies:
 
-Python: The core programming language used for scripting and orchestration.
+### Python: The core programming language used for scripting and orchestration.
 
-PostgreSQL: A powerful open-source relational database that serves as the data warehouse for both raw and transformed data.
+### PostgreSQL: A powerful open-source relational database that serves as the data warehouse for both raw and transformed data.
 
-dbt (data build tool): A command-line tool that enables data teams to transform data in their warehouse by writing modular SQL. It handles dependency management, testing, and documentation.
+### dbt (data build tool): A command-line tool that enables data teams to transform data in their warehouse by writing modular SQL. It handles dependency management, testing, and documentation.
 
-Apache Airflow: A platform for programmatically authoring, scheduling, and monitoring data workflows as Directed Acyclic Graphs (DAGs).
+### Apache Airflow: A platform for programmatically authoring, scheduling, and monitoring data workflows as Directed Acyclic Graphs (DAGs).
 
-Git: Used for version control of the entire project.
+### Git: Used for version control of the entire project.
 
 Getting Started
 Follow these steps to get the project up and running on your local machine.
@@ -69,13 +72,13 @@ dbt_project:
       schema: analytics
       threads: 1
 
-Initialize Airflow:
+### Initialize Airflow:
 
 export AIRFLOW_HOME=$(pwd)
 airflow db init
 airflow users create --username admin --firstname John --lastname Doe --role Admin --email admin@example.com
 
-Running the Pipeline
+### Running the Pipeline
 Once the setup is complete, you can run the pipeline.
 
 Start Airflow services: Open two separate terminals.
