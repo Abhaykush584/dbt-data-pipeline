@@ -1,0 +1,191 @@
+[0m12:58:32.407138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F96E7EDEB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F96CBF9880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F96D0859A0>]}
+
+
+============================== 12:58:32.442136 | ca0030cc-d347-42f1-83c9-1f12bc9a8fa3 ==============================
+[0m12:58:32.442136 [info ] [MainThread]: Running with dbt=1.10.10
+[0m12:58:32.443138 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\abhay\\.dbt', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt init dbt_project', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m12:58:32.474148 [debug] [MainThread]: Starter project path: C:\Users\abhay\dbt_pipeline_project\venv\Lib\site-packages\dbt\include\starter_project
+[0m12:58:32.531146 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:58:32.532139 [info ] [MainThread]: Setting up your profile.
+[0m13:09:17.085726 [info ] [MainThread]: Profile dbt_project written to C:\Users\abhay\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:09:17.117802 [debug] [MainThread]: Command `dbt init` succeeded at 13:09:17.116802 after 645.00 seconds
+[0m13:09:17.124219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F96EE8F6B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9708E07A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F96F06F1A0>]}
+[0m13:09:17.129219 [debug] [MainThread]: Flushing usage events
+[0m13:09:18.426096 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:09:39.325089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029947FD8680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029947A9DE20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029947A9C740>]}
+
+
+============================== 13:09:39.334513 | b0a01820-06a7-449c-9912-80450ecdec66 ==============================
+[0m13:09:39.334513 [info ] [MainThread]: Running with dbt=1.10.10
+[0m13:09:39.335515 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\abhay\\.dbt', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt debug', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'empty': 'None', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m13:09:39.366132 [info ] [MainThread]: dbt version: 1.10.10
+[0m13:09:39.367134 [info ] [MainThread]: python version: 3.12.5
+[0m13:09:39.368136 [info ] [MainThread]: python path: C:\Users\abhay\dbt_pipeline_project\venv\Scripts\python.exe
+[0m13:09:39.368136 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m13:09:39.374133 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m13:09:39.444900 [info ] [MainThread]: Using profiles dir at C:\Users\abhay\.dbt
+[0m13:09:39.445772 [info ] [MainThread]: Using profiles.yml file at C:\Users\abhay\.dbt\profiles.yml
+[0m13:09:39.445772 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\abhay\dbt_pipeline_project\dbt_project.yml
+[0m13:09:39.446926 [info ] [MainThread]: Configuration:
+[0m13:09:39.446926 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m13:09:39.448152 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:09:39.448152 [info ] [MainThread]: Required dependencies:
+[0m13:09:39.449229 [debug] [MainThread]: Executing "git --help"
+[0m13:09:39.496159 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:09:39.497157 [debug] [MainThread]: STDERR: "b''"
+[0m13:09:39.497157 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:09:39.498162 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m13:09:39.498162 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m13:09:39.499161 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "data_pipeline", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m13:09:39.499161 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\abhay\dbt_pipeline_project\dbt_project.yml> not found
+
+[0m13:09:39.500157 [debug] [MainThread]: Command `dbt debug` failed at 13:09:39.500157 after 0.32 seconds
+[0m13:09:39.500157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029947FD8680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029949311CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299474F3560>]}
+[0m13:09:39.501175 [debug] [MainThread]: Flushing usage events
+[0m13:09:40.656193 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:11:29.172446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297BF7F8BC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297BF27CB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297BF72C770>]}
+
+
+============================== 13:11:29.178446 | 92d8f28b-0f9c-4189-a8ef-eea2057f198d ==============================
+[0m13:11:29.178446 [info ] [MainThread]: Running with dbt=1.10.10
+[0m13:11:29.179472 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'empty': 'None', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\abhay\\dbt_pipeline_project'}
+[0m13:11:29.201099 [info ] [MainThread]: dbt version: 1.10.10
+[0m13:11:29.201099 [info ] [MainThread]: python version: 3.12.5
+[0m13:11:29.202090 [info ] [MainThread]: python path: C:\Users\abhay\dbt_pipeline_project\venv\Scripts\python.exe
+[0m13:11:29.202090 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m13:11:29.204087 [info ] [MainThread]: target not specified in profile 'name', using 'default'
+[0m13:11:29.205116 [info ] [MainThread]: target not specified in profile 'version', using 'default'
+[0m13:11:29.205116 [error] [MainThread]: Encountered an error:
+argument of type 'int' is not iterable
+[0m13:11:29.209086 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\abhay\dbt_pipeline_project\venv\Lib\site-packages\dbt\cli\requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhay\dbt_pipeline_project\venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhay\dbt_pipeline_project\venv\Lib\site-packages\dbt\cli\main.py", line 420, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\abhay\dbt_pipeline_project\venv\Lib\site-packages\dbt\task\debug.py", line 114, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhay\dbt_pipeline_project\venv\Lib\site-packages\dbt\task\debug.py", line 205, in _load_profile
+    profile: Profile = Profile.render(
+                       ^^^^^^^^^^^^^^^
+  File "C:\Users\abhay\dbt_pipeline_project\venv\Lib\site-packages\dbt\config\profile.py", line 402, in render
+    return cls.from_raw_profiles(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhay\dbt_pipeline_project\venv\Lib\site-packages\dbt\config\profile.py", line 368, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhay\dbt_pipeline_project\venv\Lib\site-packages\dbt\config\profile.py", line 314, in from_raw_profile_info
+    target_name, profile_data = cls.render_profile(
+                                ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhay\dbt_pipeline_project\venv\Lib\site-packages\dbt\config\profile.py", line 273, in render_profile
+    elif "target" in raw_profile:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'int' is not iterable
+
+[0m13:11:29.211085 [debug] [MainThread]: Command `dbt debug` failed at 13:11:29.211085 after 0.20 seconds
+[0m13:11:29.211085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297BF99D040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297BEDE4B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297C0A0E990>]}
+[0m13:11:29.211085 [debug] [MainThread]: Flushing usage events
+[0m13:11:30.361796 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:12:52.396686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E34484D370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3474174D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E347416810>]}
+
+
+============================== 13:12:52.402670 | aecf4985-a09f-4b2c-b8bd-d7a01fd08825 ==============================
+[0m13:12:52.402670 [info ] [MainThread]: Running with dbt=1.10.10
+[0m13:12:52.403675 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\abhay\\dbt_pipeline_project', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m13:12:52.425960 [info ] [MainThread]: dbt version: 1.10.10
+[0m13:12:52.426959 [info ] [MainThread]: python version: 3.12.5
+[0m13:12:52.426959 [info ] [MainThread]: python path: C:\Users\abhay\dbt_pipeline_project\venv\Scripts\python.exe
+[0m13:12:52.427960 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m13:12:52.482918 [info ] [MainThread]: Using profiles dir at C:\Users\abhay\dbt_pipeline_project
+[0m13:12:52.483779 [info ] [MainThread]: Using profiles.yml file at C:\Users\abhay\dbt_pipeline_project\profiles.yml
+[0m13:12:52.483779 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\abhay\dbt_pipeline_project\dbt_project.yml
+[0m13:12:52.485493 [info ] [MainThread]: adapter type: postgres
+[0m13:12:52.486509 [info ] [MainThread]: adapter version: 1.9.0
+[0m13:12:52.486509 [info ] [MainThread]: Configuration:
+[0m13:12:52.487549 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:12:52.488499 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:12:52.488499 [info ] [MainThread]: Required dependencies:
+[0m13:12:52.489499 [debug] [MainThread]: Executing "git --help"
+[0m13:12:52.528639 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:12:52.529655 [debug] [MainThread]: STDERR: "b''"
+[0m13:12:52.529655 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:12:52.530639 [info ] [MainThread]: Connection:
+[0m13:12:52.530639 [info ] [MainThread]:   host: abhay
+[0m13:12:52.530639 [info ] [MainThread]:   port: 5432
+[0m13:12:52.531638 [info ] [MainThread]:   user: postgres
+[0m13:12:52.531638 [info ] [MainThread]:   database: weather_data
+[0m13:12:52.531638 [info ] [MainThread]:   schema: analytics
+[0m13:12:52.532637 [info ] [MainThread]:   connect_timeout: 10
+[0m13:12:52.532637 [info ] [MainThread]:   role: None
+[0m13:12:52.532637 [info ] [MainThread]:   search_path: None
+[0m13:12:52.533638 [info ] [MainThread]:   keepalives_idle: 0
+[0m13:12:52.533638 [info ] [MainThread]:   sslmode: None
+[0m13:12:52.533638 [info ] [MainThread]:   sslcert: None
+[0m13:12:52.534638 [info ] [MainThread]:   sslkey: None
+[0m13:12:52.534638 [info ] [MainThread]:   sslrootcert: None
+[0m13:12:52.534638 [info ] [MainThread]:   application_name: dbt
+[0m13:12:52.535641 [info ] [MainThread]:   retries: 1
+[0m13:12:52.535641 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m13:12:52.741579 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m13:12:54.669200 [debug] [MainThread]: Using postgres connection "debug"
+[0m13:12:54.669200 [debug] [MainThread]: On debug: select 1 as id
+[0m13:12:54.670198 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:12:57.401310 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+could not translate host name "abhay" to address: No such host is known. 
+
+[0m13:12:59.692701 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m13:12:59.692701 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m13:12:59.693827 [debug] [MainThread]: On debug: No close available on handle
+[0m13:12:59.694816 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m13:12:59.695719 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m13:12:59.696720 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\abhay\dbt_pipeline_project\dbt_project.yml> not found
+
+[0m13:12:59.698039 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  could not translate host name "abhay" to address: No such host is known. 
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m13:12:59.699993 [debug] [MainThread]: Command `dbt debug` failed at 13:12:59.699993 after 7.45 seconds
+[0m13:12:59.701001 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:12:59.701001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E34665DDF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3468DB6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E346E5D070>]}
+[0m13:12:59.702000 [debug] [MainThread]: Flushing usage events
+[0m13:13:00.852355 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,7 @@
+# Ignore Python virtual environment directory
+venv/
+
+# Ignore dbt-specific files that are automatically generated
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
